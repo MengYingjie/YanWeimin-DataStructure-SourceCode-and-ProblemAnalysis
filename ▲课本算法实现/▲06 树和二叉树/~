@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct
+{
+	int a;
+}Node;
+
+int main(int argc, char *argv[])
+{
+	int *p = (int*)malloc(100*sizeof(int));
+	
+	p[2] = 134;
+	
+	p++;
+//	p++;
+	
+	printf("%d", *p);
+	
+	return 0;
+}
+

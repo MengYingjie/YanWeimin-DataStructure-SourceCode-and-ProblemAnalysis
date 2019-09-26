@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef int SS[100];
+
+void f(int *a[])
+{
+	(*a)[0] = 34;	
+}
+
+void g(SS a)
+{
+	f(&a);
+}
+
+int main(int argc, char *argv[])
+{
+	SS a;
+	
+	g(a);
+	
+	printf("%d\n", a[0]);
+	
+	return 0;
+}
+
