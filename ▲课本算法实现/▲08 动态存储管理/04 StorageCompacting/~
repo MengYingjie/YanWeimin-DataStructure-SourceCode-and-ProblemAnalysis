@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void* f()
+{
+	return malloc(1000);
+}
+
+int main(int argc, char *argv[])
+{	
+	int *p = (int*)f;
+
+	printf("%d\n", sizeof(int));
+
+	
+	printf("%u\n", p);
+//	printf("%u\n", a+1);
+//	printf("%u\n", a+2);
+	
+	return 0;
+}
+

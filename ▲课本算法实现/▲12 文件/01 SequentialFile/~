@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+typedef struct{ char a; short b; int c; }A1;
+typedef struct{ char a; int c; short b; }A2;
+
+typedef struct{ short b; int c; char a; }B1;
+typedef struct{ short b; char a; int c; }B2;
+
+typedef struct{ int c; char a; short b; }C1;
+typedef struct{ int c; short b;char a; }C2;
+
+int main(int argc, char *argv[])
+{
+	char a = 'A', short b = 3; int c = 7;
+	
+	printf("char = %d\n", sizeof(char));
+	printf("short = %d\n", sizeof(short));
+	printf("int = %d\n\n", sizeof(int));
+	
+	printf("%u\n", &a);
+	printf("A1 = %d\n", sizeof(A1));
+	printf("A2 = %d\n", sizeof(A2));	
+	printf("B1 = %d\n", sizeof(B1));
+	printf("B2 = %d\n", sizeof(B2));
+	printf("C1 = %d\n", sizeof(C1));
+	printf("C2 = %d\n", sizeof(C2));
+	
+	return 0;
+}
+
