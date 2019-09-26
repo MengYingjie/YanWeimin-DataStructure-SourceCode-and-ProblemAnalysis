@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+#if !defined a
+	int i = 22323;
+#endif
+
+int main(int argc, char *argv[])
+{
+	
+	
+	
+	return 0;
+}
+

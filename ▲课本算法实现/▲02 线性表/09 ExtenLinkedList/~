@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+	FILE *fp;
+	char s[100];
+	
+	fp = tmpfile();
+	
+	fprintf(fp, "daswr  gewe  vfdsaas");
+	fseek(fp,0,SEEK_SET);
+	fscanf(fp, "%s", s);
+	
+	return 0;
+}
+

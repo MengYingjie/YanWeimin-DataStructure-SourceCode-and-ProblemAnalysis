@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	int x;
+	int i,j;
+	FILE *fp = fopen("b.txt", "w");
+	
+	srand((unsigned)time(NULL));
+			
+	for(i=1; i<=50; i++)
+	{	
+		fprintf(fp, " ");
+		for(j=1; j<=11; j++)
+		{
+			x = rand()%9+1;
+			fprintf(fp, "%d", x);
+		}
+		fprintf(fp, "\n");	
+	}
+
+	
+	return 0;
+}
+
