@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+	int i;
+	float j;
+	
+	i = 2/3;
+	
+	j = i;
+	
+	printf("%f\n", j);
+	
+	return 0;
+}
