@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+typedef int X[10];
+
+int main(int argc, char *argv[])
+{
+	X a;
+	
+	int *b;
+	b = &a;
+	
+	a[0] = 1;
+	a[1] = 2;
+	a[2] = 3;
+
+	printf("%d %d %d", *b, *(b+1), *(b+2));
+	
+	return 0;
+}
+

@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <windows.h>
+
+void gotoxy(int x, int y)
+{
+ COORD coord;    //定义一个坐标结构变量
+ HANDLE hscr;    //定义一个句柄
+ coord.X = x;    //给坐标赋值
+ coord.Y = y;
+ hscr = GetStdHandle(STD_OUTPUT_HANDLE); //获得标准输出句柄(就是显示器）
+ SetConsoleCursorPosition(hscr, coord);  //设置控制台光标的到指定坐标
+}
+
+int main(void)
+{
+	int i;
+	
+	printf("【  】\n"); 
+	gotoxy(2,0);		
+	scanf("%d", i);
+	
+	return 0;
+}
+

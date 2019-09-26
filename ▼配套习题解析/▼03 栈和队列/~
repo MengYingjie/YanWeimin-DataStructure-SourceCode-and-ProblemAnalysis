@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+	char a[10][10];
+	int i, j;
+	
+	printf("AAAAAA");
+	printf("©³©×©·");
+	
+	return 0;
+}
+

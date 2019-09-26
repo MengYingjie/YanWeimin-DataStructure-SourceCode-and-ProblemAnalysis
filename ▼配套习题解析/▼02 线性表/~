@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+
+
+int main(int argc, char *argv[])
+{
+	char c[11] = {};
+	
+//	printf("%d", (int)(log(8)/log(2)));
+
+	printf("%c", c[0]);
+	
+	return 0;
+}
+
+
+
+	if(mark==0)										//0表示输入序列为层序序列 
+	{
+		fflush(stdin);								//清除缓存 
+		gets(input_c);								//获取输入到临时数组
+		len = strlen(input_c);						//输入的字符个数 
+		for(i=0; i<len; i++)
+		{
+			if(input_c[i]!='#')						//'#'表示此处无结点 
+				T[i] = input_c[i];
+		}	
+	}
+	else 											//引入链表 
+	{
+		
